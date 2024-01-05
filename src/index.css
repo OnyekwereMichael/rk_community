@@ -32,7 +32,7 @@ rounded
 }
 .feature{
     background-color: #FB7203;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     padding-right: 5px;
 }.wel{
     padding: 4px;
