@@ -49,31 +49,31 @@ function Home() {
     },
     {
       pic: imgfive,
-      graph: "Gold Chiavair Chairs",
+      graph: "Gold Chiavari Chairs",
       price: "$4.50/day",
       feat: "featured",
     },
     {
       pic: imgthree,
-      graph: "Ev 18 inches powered sub",
+      graph: "Alaskan white plate",
       price: "$4.50/day",
       feat: "featured",
     },
     {
       pic: imgsix,
-      graph: "3tf Banquet Table ",
+      graph: "Metal Folding Chair",
       price: "$4.50/day",
       feat: "featured",
     },
     {
       pic: imgtwo,
-      graph: "3tf Banquet Table",
+      graph: "EV 18 Inch Powered Sub",
       price: "$4.50/day",
       feat: "featured",
     },
     {
       pic: imgone,
-      graph: "3tf Banquet Table ",
+      graph: "Indoor/Outdoor Projector",
       price: "$4.50/day",
       feat: "featured",
     },
@@ -204,7 +204,7 @@ function Home() {
               <img src={one.pic} alt="" className="cmf" />
             </div>
 
-            <div className="text-center font-bold text-sm ">
+            <div className="text-center font-bold text-sm item_displayed">
               <p>{one.graph}</p>
             </div>
 
@@ -250,11 +250,11 @@ function Home() {
               <img src={one.pic} alt="" className="cmf" />
             </div>
 
-            <div className="text-center font-bold text-sm ">
+            <div className="text-center font-bold text-sm item_displayed">
               <p>{one.graph}</p>
             </div>
 
-            <section className="flex justify-around one">
+            <section className="flex justify-around one ">
               <div className="text-center dollar font-semibold mt-3 text-sm ">
                 <p>{one.price}</p>
               </div>
@@ -291,7 +291,7 @@ function Home() {
               <img src={one.pic} alt="" className="cmf" />
             </div>
 
-            <div className="text-center font-bold text-sm ">
+            <div className="text-center font-bold text-sm item_displayed">
               <p>{one.graph}</p>
             </div>
 
