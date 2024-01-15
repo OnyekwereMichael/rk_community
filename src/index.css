@@ -11,6 +11,12 @@
 body {
   max-width: 100%;
 }
+.backimg {
+  background-image: url("./ASSESTS/people shopping.jpg");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .active:focus {
   background-color: #27aae1;
   @apply p-3
@@ -29,6 +35,20 @@ rounded;
 .sign {
   background-color: lightblue;
   color: #27aae1;
+}
+.container {
+  height: 200px;
+  position: relative;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #27aae1;
+  padding: 7px 15px 7px 15px;
 }
 .inp {
   background-color: black;
@@ -90,13 +110,14 @@ rounded;
     display: none;
   }
   .wrap {
-    @apply grid-cols-2  ml-0 gap-10;
+    @apply grid-cols-2  ml-0 gap-10 pl-2;
     width: 100%;
   }
   .butt1 {
     @apply mt-3 ml-8;
   }
 }
+
 .one {
   @apply justify-start  gap-7;
 }
@@ -104,8 +125,8 @@ rounded;
   @apply ml-2 p-0 pl-4;
   width: 99%;
 }
-.item_displayed{
-    margin-left: -25px
+.graph {
+  @apply text-left;
 }
 .hidd {
   @apply absolute top-12 right-12 pt-5 p-4 rounded;
@@ -129,14 +150,30 @@ rounded;
 .fu {
   width: 100%;
 }
+.cmf {
+  @apply ml-1;
+}
+.sorted > .center {
+  @apply pt-36;
+}
+
 @media screen and (max-width: 600px) {
   .gdg {
-    @apply grid-cols-2 p-7 gap-14 pt-12 w-96;
+    /* @apply grid-cols-2 p-7 gap-14 pt-12 w-96; */
+    flex-wrap: wrap;
+    padding: 50px;
+    padding-left: 20px;
+    gap: 50px;
   }
 }
+
 @media screen and (max-width: 380px) {
   .gdg {
-    @apply w-72 gap-2 p-6 gap-14;
+    /* @apply w-72 gap-2 p-6 gap-14; */
+    flex-wrap: wrap;
+    padding: 50px;
+    padding-left: 20px;
+    gap: 30px;
   }
   .butt1 {
     @apply m-1;
@@ -148,7 +185,7 @@ rounded;
 
 @media screen and (max-width: 400px) {
   .wrap {
-    @apply grid-cols-2  ml-4 gap-7 pl-4;
+    @apply grid-cols-2  gap-10;
     width: 95%;
   }
   .butt1 {
@@ -157,18 +194,18 @@ rounded;
   .hid {
   }
   .one {
-    @apply justify-normal gap-2 pl-4;
+    @apply justify-normal gap-2;
     flex-wrap: wrap;
   }
   .item {
-    @apply gap-9 -ml-1 ml-1;
+    @apply gap-10 -ml-1 ml-4;
     width: 95%;
   }
-  .gdg {
+  /* .gdg {
     @apply grid-cols-2 p-6 gap-0;
     width: 100%;
     outline: none;
-  }
+  } */
   .you {
     @apply m-1 mt-4;
   }
@@ -177,5 +214,9 @@ rounded;
   }
   .gdg {
     @apply grid-cols-2 p-7 gap-10 pt-12 border-none;
+  }
+
+  .cmf {
+    @apply -ml-3;
   }
 }

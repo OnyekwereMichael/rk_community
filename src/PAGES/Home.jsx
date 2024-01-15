@@ -10,6 +10,7 @@ import imgtwo from "../ASSESTS/imgtwo.png";
 import imgthree from "../ASSESTS/imgthree.png";
 import imgfive from "../ASSESTS/img.png";
 import imgsix from "../ASSESTS/pick.png";
+import cart from "../ASSESTS/cart 1.webp";
 import { motion } from "framer-motion";
 
 function Home() {
@@ -124,13 +125,19 @@ function Home() {
           )}
           </AnimatePresence> */}
 
-      <section>
-        <p className="text-black-600 text-center pt-20 font-bold md:text-3xl">
+      <section className="backimg">
+        <p className="text-black-600 text-center pt-20 font-bold md:text-3xl text-white sorted">
           Get all your events needs sorted
         </p>
-        <p className="p-5 text-center font-semibold">
+        <p className="p-5 text-center font-bold text-white sorted">
           Shop and rent your event items on RKcommunity
         </p>
+
+        <div class="container">
+          <div className="center rounded-full  text-white">
+            <button className="font-semibold">SEE CATEGORIES</button>
+          </div>
+        </div>
       </section>
 
       <section>
@@ -204,12 +211,12 @@ function Home() {
               <img src={one.pic} alt="" className="cmf" />
             </div>
 
-            <div className="text-center font-bold text-sm item_displayed">
+            <div className="text-center font-bold text-sm item_displayed graph">
               <p>{one.graph}</p>
             </div>
 
             <section className="flex justify-around one">
-              <div className="text-center dollar font-semibold mt-3 text-sm ">
+              <div className="text-center dollar font-semibold mt-3 text-sm">
                 <p>{one.price}</p>
               </div>
 
@@ -250,7 +257,7 @@ function Home() {
               <img src={one.pic} alt="" className="cmf" />
             </div>
 
-            <div className="text-center font-bold text-sm item_displayed">
+            <div className="text-center font-bold text-sm item_displayed graph">
               <p>{one.graph}</p>
             </div>
 
@@ -291,16 +298,16 @@ function Home() {
               <img src={one.pic} alt="" className="cmf" />
             </div>
 
-            <div className="text-center font-bold text-sm item_displayed">
+            <div className="text-center font-bold text-sm item_displayed graph">
               <p>{one.graph}</p>
             </div>
 
             <section className="flex justify-around one">
-              <div className="text-center dollar font-semibold mt-3 text-sm">
+              <div className="text-center dollar font-semibold mt-3 text-sm graph">
                 <p>{one.price}</p>
               </div>
 
-              <div className="mt-3 text-white feature rounded text-sm two">
+              <div className="mt-3 text-white feature rounded text-sm two ">
                 <p className="two">{one.feat}</p>
               </div>
             </section>
