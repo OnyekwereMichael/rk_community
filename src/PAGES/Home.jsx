@@ -1,84 +1,10 @@
 // import navbar from "../components/navbar"
 // import footer from "../components/footer"
-import picone from "../ASSESTS/picone.png";
-import pictwo from "../ASSESTS/pictwo.png";
-import picthree from "../ASSESTS/picthree.png";
-import picfour from "../ASSESTS/picfour.png";
-import imgone from "../ASSESTS/imgone.png";
-import imgfour from "../ASSESTS/imaa.png";
-import imgtwo from "../ASSESTS/imgtwo.png";
-import imgthree from "../ASSESTS/imgthree.png";
-import imgfive from "../ASSESTS/img.png";
-import imgsix from "../ASSESTS/pick.png";
-import cart from "../ASSESTS/cart 1.webp";
+import {  dat } from "../PAGES/items";
+import {  data } from "../PAGES/items";
 import { motion } from "framer-motion";
 
 function Home() {
-  const data = [
-    {
-      img: picone,
-      head: "CANOPIES",
-      para: "from $4.50/day",
-      button: "Show Now",
-    },
-    {
-      img: pictwo,
-      head: "CHAIRS",
-      para: "from $1.50/day",
-      button: "Show Now",
-    },
-    {
-      img: picthree,
-      head: "TABLES",
-      para: "from $1.50/day",
-      button: "Show Now",
-    },
-    {
-      img: picfour,
-      head: "BAR SETS",
-      para: "from $11.50/day",
-      button: "Show Now",
-    },
-  ];
-
-  const dat = [
-    {
-      pic: imgfour,
-      graph: "3tf Banquet Table for Kids",
-      price: "$4.50/day",
-      feat: "featured",
-    },
-    {
-      pic: imgfive,
-      graph: "Gold Chiavari Chairs",
-      price: "$4.50/day",
-      feat: "featured",
-    },
-    {
-      pic: imgthree,
-      graph: "Alaskan white plate",
-      price: "$4.50/day",
-      feat: "featured",
-    },
-    {
-      pic: imgsix,
-      graph: "Metal Folding Chair",
-      price: "$4.50/day",
-      feat: "featured",
-    },
-    {
-      pic: imgtwo,
-      graph: "EV 18 Inch Powered Sub",
-      price: "$4.50/day",
-      feat: "featured",
-    },
-    {
-      pic: imgone,
-      graph: "Indoor/Outdoor Projector",
-      price: "$4.50/day",
-      feat: "featured",
-    },
-  ];
   // const [Slide, setSlide] = useState(true)
   // setTimeout(() => {
   // setSlide(false)
@@ -129,7 +55,7 @@ function Home() {
         <p className="text-black-600 text-center pt-20 font-bold md:text-3xl text-white sorted">
           Get all your events needs sorted
         </p>
-        <p className="p-5 text-center font-bold text-white sorted">
+        <p className="p-5 text-center font-extrabold text-white sorted">
           Shop and rent your event items on RKcommunity
         </p>
 
@@ -165,7 +91,7 @@ function Home() {
             transition={{ duration: 0.3, delay: index * 0.13 }}
           >
             <div className="text-center">
-              <img src={item.img} alt="" className="cmf" />
+              <img src={item.img} alt="" className="cmk" />
             </div>
 
             <div className="text-center font-bold ">

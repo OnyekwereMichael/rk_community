@@ -37,14 +37,14 @@ rounded;
   color: #27aae1;
 }
 .container {
-  height: 200px;
+  height: 220px;
   position: relative;
 }
 .center {
   margin: 0;
   position: absolute;
   top: 10%;
-  left: 50%;
+  left: 48%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: #27aae1;
@@ -198,7 +198,7 @@ rounded;
     flex-wrap: wrap;
   }
   .item {
-    @apply gap-10 -ml-1 ml-4;
+    @apply gap-16 -ml-1 ml-3;
     width: 95%;
   }
   /* .gdg {
@@ -207,7 +207,7 @@ rounded;
     outline: none;
   } */
   .you {
-    @apply m-1 mt-4;
+    @apply m-1 mt-4 ml-4;
   }
   .fu {
     width: 100%;
@@ -217,6 +217,9 @@ rounded;
   }
 
   .cmf {
-    @apply -ml-3;
+    width: 80%;
+  }
+  .cmk{
+    @apply -ml-3
   }
 }
