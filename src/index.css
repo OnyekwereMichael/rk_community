@@ -185,7 +185,7 @@ rounded;
 
 @media screen and (max-width: 400px) {
   .wrap {
-    @apply grid-cols-2  gap-10;
+    @apply grid-cols-2  gap-10 ml-3;
     width: 95%;
   }
   .butt1 {
